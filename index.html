@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,99 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="font-poppins">
-    <section class="home"></section>
-    <section class="play-ground"></section>
-    <section class="score"></section>
+  <body class="font-poppins m-0 p-0">
+    <main
+      class="min-h-screen bg-[#010313] bg-[url(../images/background.png)] bg-no-repeat bg-center"
+    >
+      <!-- home -->
+      <section
+        class="home min-h-screen flex justify-center items-center hidden"
+      >
+        <div class="flex flex-col items-center gap-6">
+          <h1 class="font-[800] text-8xl text-white uppercase">
+            Alphabet Clash
+          </h1>
+          <p class="font-[500] text-[23px] text-white">
+            Unleash Your Keyboard Kung Fu:Press "Enter" To Play
+          </p>
+          <button class="btn">Play Now</button>
+        </div>
+      </section>
+      <!-- play ground -->
+      <section class="play-ground hidden">
+        <div
+          class="min-h-screen flex flex-col items-center gap-10 relative pt-12"
+        >
+          <!-- play screen -->
+          <div
+            class="artboard artboard-horizontal phone-5 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] flex items-center justify-center text-8xl text-black"
+          >
+            <div class="absolute top-12">
+              <p class="bg-[#2F2941] text-white text-xl p-4 rounded-b-xl">
+                Don't watch keyboard while playing...
+              </p>
+            </div>
+            0
+          </div>
+          <!-- keyboard -->
+          <div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">q</kbd>
+              <kbd class="kbd">w</kbd>
+              <kbd class="kbd">e</kbd>
+              <kbd class="kbd">r</kbd>
+              <kbd class="kbd">t</kbd>
+              <kbd class="kbd">y</kbd>
+              <kbd class="kbd">u</kbd>
+              <kbd class="kbd">i</kbd>
+              <kbd class="kbd">o</kbd>
+              <kbd class="kbd">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">a</kbd>
+              <kbd class="kbd">s</kbd>
+              <kbd class="kbd">d</kbd>
+              <kbd class="kbd">f</kbd>
+              <kbd class="kbd">g</kbd>
+              <kbd class="kbd">h</kbd>
+              <kbd class="kbd">j</kbd>
+              <kbd class="kbd">k</kbd>
+              <kbd class="kbd">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">z</kbd>
+              <kbd class="kbd">x</kbd>
+              <kbd class="kbd">c</kbd>
+              <kbd class="kbd">v</kbd>
+              <kbd class="kbd">b</kbd>
+              <kbd class="kbd">n</kbd>
+              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <!-- life score -->
+          <div class="w-full flex flex-row justify-around">
+            <button
+              class="btn bg-[rgb(137,65,137)] border-none rounded-3xl text-white"
+            >
+              Life
+              <img src="./images/Group-23.svg" alt="" />
+              1
+            </button>
+            <button
+              class="btn bg-[rgb(54,4,144)] border-none rounded-3xl text-white"
+            >
+              Score
+              <img src="./images/monetization_on.svg" alt="" />
+              1
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- result -->
+      <section class="score">
+        
+      </section>
+    </main>
   </body>
 </html>
